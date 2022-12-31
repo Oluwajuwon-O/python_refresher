@@ -1,12 +1,11 @@
 ﻿blocks = int(input("Enter the number of blocks: "))
-height = blocks
-step = 0
+
 #
 # Write your code here.
 #	
-while height > 0:
-    height -= blocks
-    blocks -= 1
-    step += 1
-    
-print("The height of the pyramid:", step)
+height = 0
+
+while height < blocks: # while the height is less than the blocks
+    height += 1 # increase the height by 1
+    blocks -= height # decrease the block by the current height
+print("The height of the pyramid:", height)
